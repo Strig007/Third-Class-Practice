@@ -1,0 +1,27 @@
+﻿@model List<ThirdWebApp.Models.Student>
+
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List</h2>
+
+<table class="table table-bordered">
+
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>DOB</th>
+    </tr>
+
+    @foreach (var s in Model)
+    {
+        <tr>
+            <td>@s.Id</td>
+            <td>@s.Name</td>
+            <td>@s.Dob</td>
+            
+        </tr>
+    }
+
+</table>
